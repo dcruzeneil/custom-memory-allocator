@@ -10,7 +10,10 @@ To create the shared library, use the provided `Makefile`:
 make
 ```
 
-This will generate the `my-malloc.so` shared library. TO test this implementation by overwriting the existing `malloc` definition used by all programs, use the `LD_PRELOAD` trick:
+This will generate the `my-malloc.so` shared library. 
+
+### Testing the Custom `malloc`
+To test this implementation by overwriting the existing `malloc` definition used by all programs, use the `LD_PRELOAD` trick:
 ```sh
 LD_PRELOAD=./my-malloc.so [COMMAND/PROGRAM TO RUN]
 ```
