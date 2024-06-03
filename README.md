@@ -12,7 +12,7 @@ make
 
 This will generate the `my-malloc.so` shared library. 
 
-### Testing the Custom `malloc`
+### Testing this Custom `malloc`
 To test this implementation by overwriting the existing `malloc` definition used by all programs, use the `LD_PRELOAD` trick:
 ```sh
 LD_PRELOAD=./my-malloc.so [COMMAND/PROGRAM TO RUN]
